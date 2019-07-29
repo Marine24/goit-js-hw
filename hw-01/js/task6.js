@@ -2,7 +2,6 @@
 
 let input;
 let total = 0;
-let message;
 
 while (input !== null) {
   input = prompt('Enter your number please');

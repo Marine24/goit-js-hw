@@ -2,6 +2,7 @@
 
 const name = 'Генератор защитного поля';
 let price = 1000;
+let message;
 
 message = `Выбран «${name}», цена за штуку ${price} кредитов`;
 
