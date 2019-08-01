@@ -1,44 +1,56 @@
 'use strict';
 
-const China = 'china';
+const countryChina = 'China';
 const costDeliveryChina = 100;
-const Chili = 'chili';
+const countryChili = 'Chili';
 const costDeliveryChili = 250;
-const Australia = 'australia';
+const countryAustralia = 'Australia';
 const costDeliveryAustralia = 170;
-const India = 'india';
+const countryIndia = 'India';
 const costDeliveryIndia = 80;
-const Jamaica = 'jamaica';
+const countryJamaica = 'Jamaica';
 const costDeliveryJamaica = 120;
-let message;
 
 const userOrder = prompt(
-  `Choose the country in which you want to make delivery: China, Chili, Australia, India, Jamaica`,
+  `Выберете страну, в которую необходимо осуществить доставку: China, Chili, Australia, India, Jamaica`,
 );
 if (userOrder !== null) {
   const userChoice = userOrder.toLowerCase();
-
+  countryChina.toLocaleLowerCase();
+  countryChili.toLocaleLowerCase();
+  countryAustralia.toLocaleLowerCase();
+  countryIndia.toLocaleLowerCase();
+  countryJamaica.toLocaleLowerCase();
   switch (userChoice) {
-    case 'china':
-      message = `Доставка в ${China} будет стоить ${costDeliveryChina} кредитов`;
+    case 'China':
+      alert(
+        `Доставка в ${countryChina} будет стоить ${costDeliveryChina} кредитов`,
+      );
       break;
     case 'chili':
-      message = `Доставка в ${Chili} будет стоить ${costDeliveryChili} кредитов`;
+      alert(
+        `Доставка в ${countryChili} будет стоить ${costDeliveryChili} кредитов`,
+      );
       break;
     case 'australia':
-      message = `Доставка в ${Australia} будет стоить ${costDeliveryAustralia} кредитов`;
+      alert(
+        `Доставка в ${countryAustralia} будет стоить ${costDeliveryAustralia} кредитов`,
+      );
       break;
     case 'india':
-      message = `Доставка в ${India} будет стоить ${costDeliveryIndia} кредитов`;
+      alert(
+        `Доставка в ${countryIndia} будет стоить ${costDeliveryIndia} кредитов`,
+      );
       break;
     case 'jamaica':
-      message = `Доставка в ${Jamaica} будет стоить ${costDeliveryJamaica} кредитов`;
+      alert(
+        `Доставка в ${countryJamaica} будет стоить ${costDeliveryJamaica} кредитов`,
+      );
       break;
 
     default:
-      message = 'В вашей стране доставка не доступна';
+      alert('В вашей стране доставка не доступна');
   }
 } else {
-  message = 'Страна не выбрана';
+  alert('Страна не выбрана');
 }
-alert(message);
