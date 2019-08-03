@@ -1,51 +1,37 @@
 'use strict';
 
-const countryChina = 'China';
+const countryChina = 'china';
 const costDeliveryChina = 100;
-const countryChili = 'Chili';
+const countryChili = 'chili';
 const costDeliveryChili = 250;
-const countryAustralia = 'Australia';
+const countryAustralia = 'australia';
 const costDeliveryAustralia = 170;
-const countryIndia = 'India';
+const countryIndia = 'india';
 const costDeliveryIndia = 80;
-const countryJamaica = 'Jamaica';
+const countryJamaica = 'jamaica';
 const costDeliveryJamaica = 120;
 
 const userOrder = prompt(
   `Выберете страну, в которую необходимо осуществить доставку: China, Chili, Australia, India, Jamaica`,
 );
 if (userOrder !== null) {
-  const userChoice = userOrder.toLowerCase();
-  countryChina.toLocaleLowerCase();
-  countryChili.toLocaleLowerCase();
-  countryAustralia.toLocaleLowerCase();
-  countryIndia.toLocaleLowerCase();
-  countryJamaica.toLocaleLowerCase();
-  switch (userChoice) {
-    case 'China':
-      alert(
-        `Доставка в ${countryChina} будет стоить ${costDeliveryChina} кредитов`,
-      );
+  switch (userOrder.toLowerCase()) {
+    case 'china':
+      alert(`Доставка в China будет стоить ${costDeliveryChina} кредитов`);
       break;
     case 'chili':
-      alert(
-        `Доставка в ${countryChili} будет стоить ${costDeliveryChili} кредитов`,
-      );
+      alert(`Доставка в Chili будет стоить ${costDeliveryChili} кредитов`);
       break;
     case 'australia':
       alert(
-        `Доставка в ${countryAustralia} будет стоить ${costDeliveryAustralia} кредитов`,
+        `Доставка в Australia будет стоить ${costDeliveryAustralia} кредитов`,
       );
       break;
     case 'india':
-      alert(
-        `Доставка в ${countryIndia} будет стоить ${costDeliveryIndia} кредитов`,
-      );
+      alert(`Доставка в India будет стоить ${costDeliveryIndia} кредитов`);
       break;
     case 'jamaica':
-      alert(
-        `Доставка в ${countryJamaica} будет стоить ${costDeliveryJamaica} кредитов`,
-      );
+      alert(`Доставка в Jamaika будет стоить ${costDeliveryJamaica} кредитов`);
       break;
 
     default:

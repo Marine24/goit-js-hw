@@ -8,7 +8,7 @@ const userOrder = prompt('Сколько дронов Вы желаете при
 if (userOrder === null) {
   alert('Отменено пользователем!');
 } else {
-  totalPrice = Number(userOrder) * pricePerDroid;
+  totalPrice = userOrde * pricePerDroid;
   if (totalPrice > credits) {
     alert('Недостаточно средств на счету!');
   } else {
